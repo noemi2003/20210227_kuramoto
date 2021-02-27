@@ -105,101 +105,111 @@ input, select {
 
 /* ここまでリセットcss */
 /* ここまでリセットcss */
-body{
-    width: 1920px;
-}
-header{
-    height: 70px;
-    background-color: black;
-    display: flex;
+
+.header {
+  height: 70px;
+  background: #000;
 }
 
-.header_logo{
-    margin:20px 30px;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header ul{
-    display: flex;
-    margin-left: auto;
-    
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
 }
 
-header li{
-    color: white;
-    list-style: none;
-    margin:30px 0 20px 0;
+.header-nav ul{
+  display: flex;
 }
 
-header a{
-    list-style: none;
-    margin-right: 40px;
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
 }
 
-.eyecatch{
-    height: 935px;
-    width: 1920px;
-    background-image: url(../img/eyecatch.jpg);
+.header-nav a {
+  color: #f2f2f2;
+}
+
+
+
+#eyecatch {
+    height: 940px;
+    background: url(../img/eyecatch.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
-}
+  }
+  
 
-.eyecatch h1{
+.title{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
     font-size: 55px;
+    font-weight: bold;
     color: white;
-    padding-top: 540px;
-    margin-left: 190px;
-}
+    line-height: 1;
+  }
 
-.eyecatch_news{
-    width: 960px;
-    height: 70px ;
-    position: absolute;
-    top: 865px;
-    left: 960px;
-    display: flex;
-}
+  .news_title{
+      background-color: white;
+      height: 70px;
+      width: 50%;
+      position: absolute;
+      top: 93%;
+      left: 50%;
+      display: flex;
+  }
 
-.date{
-    width: 770px;
-    background-color: white;
-    position: relative;
-}
+  .date{
+      line-height: normal;
+  }
 
-.date p:last-child{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-}
-.news{
-    width: 190px;
-    background-color: black;
-    color: white;
-    position: relative;
-}
+  .news{
+      font-size: 10px;
+      padding: 30px 8%;
+      color: white;
+      background-color: black;
+      margin-left: auto;
+  }
 
-.news p{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .service{
+      height: 1840px;
+      position: relative;
+  }
+
+  .service h2{
+      text-align: center;
+      padding: 30px;
+      font-size: 35px;
+  }
+
+
+
 
 .mission{
     height: 605px;
     background-color: black;
+    position: relative;
     margin-bottom: 190px;
 }
 
 .mission_message{
-    width: 960px;
-    height: 215px;
-    float: left;
+    height: 35%;
     position: absolute;
-    top: 1200px;
-    left: 380px;
+    top: 200px;
+    left: 20%;
     line-height:normal;
+    width: 50%;
 }
 
 .mission_message:not(button){
@@ -219,8 +229,9 @@ header a{
 
 .orenge{
     position: absolute;
-    top: 1155px;
-    left: 1055px;
+    top: 25%;
+    left: 50%;
+    width: 50%;
 }
 
 
@@ -230,65 +241,53 @@ header a{
     position: relative;
 }
 
-.white_box{
-    position: relative;
-    background-color: white;
-    width: 780px;
-    height: 380px;
+.coach_missyon{
+    margin: 20px 0;
 }
 
-.white_box :not(h3){
-    font-size: 15px;
+.service_message_camera{
     line-height: normal;
-}
-
-.white_box button{
-    background-color: white;
+    width: 40%;
+    padding:5% ;
     font-size: 14px;
-    padding: 12px 38px;
-    border: solid 1px black;
-    margin-top: 20px;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+}
+
+.service button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
     float: right;
+    margin-top: 20px;
 }
 
-.child{
-    width: 575px;
-    height: 185px;
+.service img:first-of-type{
+    width: 50%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+}
+
+.service_message_fire{
+    line-height: normal;
+    width: 40%;
+    padding:5% ;
+    font-size: 14px;
+    background-color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.child p:first-of-type {
-    margin: 25px 0;
+    top: 61%;
+    left: 35%;
 }
 
-
-
-.camera{
+.service img:last-of-type{
+    width: 50%;
+    object-fit: contain;
     position: absolute;
-    top: 130px;
-    left: -570px;
+    top: 54%;
 }
-
-.position_camera{
-    position: relative;
-    top: 85px;
-    left:960px;
-}
-
-
-.fire{
-    position: absolute;
-    top: 130px;
-    left: 765px;
-}
-
-.position_fire{
-    position: relative;
-    top: 290px;
-}
-
 
 .company_recruit{
     margin: 190px 0;
@@ -300,7 +299,6 @@ header a{
 
 .company_recruit h3{
     font-size: 25px;
-    padding-top: 120px;
     padding-bottom: 15px;
 }
 
@@ -309,34 +307,51 @@ header a{
 {
     font-size: 20px;
 }
+
+.business{
+    height: 1040px;
+}
 .recruit{
-    width: 920px;
-    height: 300px;
+    width: 48%;
+    padding: 11% 0;
+    height: 29%;
     background-image: url(../img/recruit.jpg);
     background-size: cover ;
 }
 
 .company{
-    width: 920px;
-    height: 300px;
+    width: 48%;
+    padding: 11% 0;
+    height: 29%;
     background-image: url(../img/company.jpeg);
     background-size: cover;
 }
 
 .faq{
+    height: 160px;
     color: white;
     background-color: black;
-    width: 1445px;
-    height: 165px;
-    margin: 0 240px 190px 240px;
     display: flex;
     align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .faq h2{
+    position: absolute;
+    top: 40%;
+    left: 3%;
     font-size: 35px;
-    padding: 0 525px 0 50px;
 }
+
+.faq p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .contact{
     height: 695px;
@@ -344,11 +359,13 @@ header a{
     color: white;
     background-image: url(../img/contact-bg.jpg);
     background-size: cover;
+    position: relative;
 }
+
 
 .contact h2{
     font-size: 30px;
-    padding-top: 200px 0 20px 0;
+    padding: 200px 0 20px;
 }
 
 .contact h3{
@@ -357,8 +374,22 @@ header a{
 }
 
 .contact_message{
+    display: block;
+    line-height: normal;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 10px;
     padding-bottom: 45px;
+    width: 65%;
+}
+
+.contact h2 p h3 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    line-height: 1;
 }
 
 .contact a{
