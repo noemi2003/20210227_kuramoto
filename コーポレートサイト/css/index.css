@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+
+
+button{
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #cd0224;
+    border: none
+}
+
+button a{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------
+    header
+   ---------------*/
+.top-mv-main-copy{
+    font-weight: bold;
+}
+.header {
+height: 70px;
+width: 100%;
+background:white;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 2;
+}
+
+.header-logo a{
+    color: black;
+}
+
+.header-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-logo {
+font-size: 24px;
+font-weight: bold;
+margin-left: 35px;
+
+line-height: 70px;
+}
+
+.header-nav ul{
+display: flex;
+}
+
+.header-nav li {
+margin-right: 35px;
+font-size: 16px;
+}
+
+.header-nav a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* ---------------
+    eyecatch
+   ---------------*/
+
+.eyecatch{
+    top: 70px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/mv.png) center / cover;
+    color: #fff;
+}
+
+.top-mv-main-copy{
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.top-mv-main-copy span{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ---------------
+    feature
+   ---------------*/
+
+.top_feature{
+    padding: 80px 7.5%;
+    height: 143px;
+    align-items: center;
+    color: white;
+    background-color: rgb(44, 43, 43);
+}
+
+.top_feature h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.top_feature  p{
+    margin-top: 20px;
+    line-height: normal;
+    font-size: 16px;
+}
+
+/* ---------------
+    service
+   ---------------*/
+
+.service{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 80px 0;
+    text-align: center;
+}
+
+
+.service_sectioon{
+    width: 529px;
+}
+
+.service_wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service_sectioon{
+    margin-top: 20px;
+    line-height: normal;
+}
+
+.service_sectioon h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service_sectioon:nth-of-type(even){
+    margin-left: 21px;
+}
+
+.service button{
+    margin: 40px auto;
+}
+
+/* ---------------
+    news
+   ---------------*/
+
+.news{
+    background-color: rgb(34, 35, 35);
+    padding:0 12.5% 80px;
+}
+
+.title_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_button button{
+    padding: 7px;
+    width: 146px;
+}
+
+.title_button h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 80px 0;
+    color: white;
+}
+
+.news_text{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.news_text p{
+    margin-right: 10px;
+}
+
+/* ---------------
+      blog
+   ---------------*/
+
+.blog h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 80px 0 40px 0;
+    text-align: center;
+}
+
+.blog_text img{
+    height: 207px;
+    width: 345px;
+}
+
+
+.blog_text {
+    display: flex;
+    justify-content: center;
+    line-height: normal;
+}
+
+.blog_text_center{
+    margin: 0 21px;
+}
+
+.blog button, .contact button{
+    margin: 80px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ---------------
+      company
+   ---------------*/
+
+.company_item{
+    display: flex;
+}
+
+.company_item a{
+    display: block;
+    width: 50%;
+    padding: 115px 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:auto; 
+    margin-bottom: auto；
+}
+
+.company_item a:first-child{
+    background-color: #cd0224;
+}
+
+/* ---------------
+      contact
+   ---------------*/
+
+.contact{
+    background-color: rgb(230, 227, 227);
+    text-align: center;
+    line-height: normal;
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+
+.contact h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 80px;
+}
+
+/* ---------------
+      footer
+   ---------------*/
+footer{
+    font-size: 12px;
+    display: flex;
+    background-color: black;
+    padding: 20px 12%;
+    color: white;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer a{
+    color: white;
+}
+
+.footer-nav li:nth-of-type(even){
+    padding: 0 20px;
+}
+
+/* ーーーーーーー
+レスポンシブ化 */
+
+@media screen and (max-width: 768px) {
+
+    #hamburger {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+        top: 15px;
+        transition: 0.4s;
+      }
+      
+      #hamburger span {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        transition: 0.8s;
+      }
+      
+      
+      #hamburger span:nth-of-type(1) {
+        top: 10px; /* ハンバーガーメニューの1本目の棒 */
+      }
+      
+      #hamburger span:nth-of-type(2) {
+        top: 20px; /* ハンバーガーメニューの2本目の棒 */
+      }
+      
+      #hamburger span:nth-of-type(3) {
+        top: 30px; /* ハンバーガーメニューの3本目の棒 */
+      }
+      
+      .header-nav {
+        display: none; 
+      }
+
+
+      .blog_text{
+        flex-wrap: wrap;
+      }
+
+      .blog_text img{
+          width: 529px;
+          height: auto;
+        }
+
+      .footer-nav li:nth-of-type(even){
+        display: none;
+    }
+
+    .footer-nav ul{
+        display: block;
+        float: right;
+    }
+    .footer-nav li {
+        margin-bottom: 10px;
+    }
+
+
+
+}

@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button{
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: black;
+    border: none
+}
+
+button a{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ---------------
+    header
+   ---------------*/
+.header {
+height: 70px;
+background:white;
+top: 0;
+left: 0;
+z-index: 2;
+}
+
+.header-logo a{
+    color: black;
+}
+
+.header-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-logo {
+font-size: 24px;
+font-weight: bold;
+margin-left: 35px;
+
+line-height: 70px;
+}
+
+.header-nav ul{
+display: flex;
+}
+
+.header-nav li {
+margin-right: 35px;
+font-size: 16px;
+}
+
+.header-nav a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+/* ---------------
+      company
+   ---------------*/
+
+   .company_item{
+    display: flex;
+}
+
+.company_item a{
+    display: block;
+    width: 50%;
+    padding: 115px 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:auto; 
+    margin-bottom: auto；
+}
+
+.company_item a:first-child{
+    background-color: #cd0224;
+}
+
+
+/* ---------------
+      footer
+   ---------------*/
+footer{
+    font-size: 12px;
+    display: flex;
+    background-color: black;
+    padding: 20px 12%;
+    color: white;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer a{
+    color: white;
+}
+
+.footer-nav li:nth-of-type(even){
+    padding: 0 20px;
+}
+
+/* ---------------
+      eyecatch
+   ---------------*/
+
+.eyecatch{
+    background: url(../img/mv.png) center / cover;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/* ---------------
+      contact
+   ---------------*/
+
+form input, form textarea, form h2{
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 20px;
+}
+
+form h2 span{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+form input, form textarea{
+    border: 1px solid #ccc;
+}
+
+
+form button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+form h2:first-child{
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #hamburger {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+        top: 15px;
+        transition: 0.4s;
+      }
+      
+      #hamburger span {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        transition: 0.8s;
+      }
+      
+      
+      #hamburger span:nth-of-type(1) {
+        top: 10px; /* ハンバーガーメニューの1本目の棒 */
+      }
+      
+      #hamburger span:nth-of-type(2) {
+        top: 20px; /* ハンバーガーメニューの2本目の棒 */
+      }
+      
+      #hamburger span:nth-of-type(3) {
+        top: 30px; /* ハンバーガーメニューの3本目の棒 */
+      }
+      
+      .header-nav {
+        display: none; 
+      }
+
+
+    
+
+      .footer-nav li:nth-of-type(even){
+        display: none;
+    }
+
+    .footer-nav ul{
+        display: block;
+        float: right;
+    }
+    .footer-nav li {
+        margin-bottom: 10px;
+    }
+
+
+
+}
