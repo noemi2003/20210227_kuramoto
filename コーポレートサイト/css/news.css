@@ -225,7 +225,8 @@ footer a{
 
     .footer-nav ul{
         display: block;
-        float: right;
+        text-align: center;
+        width: 80px;
     }
     .footer-nav li {
         margin-bottom: 10px;
